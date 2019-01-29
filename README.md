@@ -7,7 +7,12 @@ Run `npm install`
 
 # Usage
 
-Run `SERVERLESS_ENV=<staging|preprod|production> node index.js`
+1. Create test accounts
+	- `./create.sh <count> <env>`
+2. Create user IDs and insert into DB
+	- `SERVERLESS_ENV=<staging|preprod|production> node index.js`
+3. Clean up
+	- `rm *.csv`
 
 # Notes
 
